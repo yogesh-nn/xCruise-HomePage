@@ -1,0 +1,75 @@
+body {
+    background-image: url(https://raw.githubusercontent.com/Mohak-Trivedi/xCruise/main/assests/hero-cruise.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* @media screen {
+    min-width: 481px;
+} */
+
+.navbar {
+    background-color: rgb(0, 0, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+}
+
+.navbar .logo img {
+    height: 12vh;
+}
+
+.menu {
+    /* padding: 10px; */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+
+}
+
+.hero h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero button {
+    background-color: orangered;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+
+.discover {
+    background-color: white;
+}
+
+.popular {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pills {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.popular .pills div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
