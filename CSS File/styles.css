@@ -1,7 +1,19 @@
-body {
-    background-image: url(https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true);
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+
+/* for TABLET Screens... */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* for MOBILE Screens... */
+@media (max-width: 480px) {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -23,22 +35,36 @@ body {
 
 .menu {
     display: flex;
-    gap: 10px;
+    justify-content: space-around;
+    width: 15rem;
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #bfbece;
 }
 
 .hero {
-
+    background-image: url(https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true);
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* width: 100vw; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.hero h1 {
-    color: white;
+.hero h1, p {
+    color: #fff2f5;
     display: flex;
     justify-content: center;
+}
+
+.hero p {
+    margin-top: 16px;
 }
 
 .hero .button {
@@ -48,10 +74,15 @@ body {
 }
 
 .hero button {
-    background-color: orangered;
-    color: white;
+    background-color: #e4581f;
+    color: #fff2f5;
     padding: 6px;
     text-align: center;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 16px;
+    cursor: pointer;
 }
 
 .discover {
