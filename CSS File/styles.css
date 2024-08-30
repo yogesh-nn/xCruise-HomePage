@@ -1,14 +1,41 @@
-
 /* for TABLET Screens... */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
     }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading {
+        border-left: 0px;
+        text-align: center;
+    }
+
+    .popular {
+        margin-top: 10px;
+    }
 }
 
 /* for MOBILE Screens... */
 @media (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .heading {
+        border-left: 0px;
+        text-align: center;
+    }
+
+    .pills {
+        flex-direction: column;
+    }
+
+    .popular {
+        flex-direction: column;
+    }
 }
 
 * {
@@ -54,10 +81,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.hero h1, p {
+.hero h1,
+.hero p {
     color: #fff2f5;
     display: flex;
     justify-content: center;
@@ -86,23 +114,140 @@
 }
 
 .discover {
-    background-color: white;
+    background-color: #ffffff;
+}
+
+.heading {
+    border-left: 5px solid #d8a851;
+    /* padding-right: 50px; */
+    /* gap: 8px; */
+    padding-left: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.heading h2 {
+    color: #201615;
+}
+
+.heading p {
+    color: #766e6d;
 }
 
 .popular {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    gap: 10px;
 }
 
 .pills {
     display: flex;
-    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    gap: 10px;
+}
+
+.pills img {
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    border-radius: 50%;
+    
+}
+
+.first-pill {
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 10px 5px 10px;
+    width: -5px;
+    border: 1px;
+    border-radius: 50px;
     align-items: center;
 }
 
-.popular .pills div img{
-    width: 30px;
-    height: 30px;
+.second-pill {
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 10px 5px 10px;
+    width: -5px;
+    border: 1px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.third-pill {
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 10px 5px 10px;
+    width: -5px;
+    border: 1px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+/* For Banner Class... */
+.banner {
+    background-image: url(https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/caribbean-cruise.png?raw=true);
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    height: 300px;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+}
+
+
+.bookmark img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: #98805f;
     border-radius: 50%;
+    padding: 4px;
+}
+
+.banner h2, .banner p {
+    color: white;
+    /* display: flex;
+    align-items: flex-end; */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card div {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
 }
