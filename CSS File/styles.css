@@ -16,6 +16,27 @@
     .popular {
         margin-top: 10px;
     }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .contact_info div {
+        width: 100%;
+    }
+
+    .headings_footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: #000032;
+    }
 }
 
 /* for MOBILE Screens... */
@@ -250,4 +271,96 @@
 .card img {
     width: 100%;
     height: 100%;
+}
+
+/* Contact Section... */
+
+.contact_info {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.contact_info h4 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.contact_info p {
+    color: #766e6d;
+}
+
+#contact {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.contact_info h4, .contact_info p {
+    text-align: center;
+}
+
+#contact h3 {
+    margin-top: 25px;
+}
+
+#contact hr {
+    width: 100px;
+    margin: auto;
+    border: 2px solid orange;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.contact_info div {
+    width: 50%;
+    border: 1px solid #d1d0d0;
+}
+
+/* footer section... */
+footer {
+    background-color: #000032;
+    height: 300px;
+}
+
+.headings_footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headings_footer .first_line h3 {
+    margin-top: 16px;
+    color: #f09c31;
+}
+
+.headings_footer li {
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer_rights {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    border-top: 2px solid #191b47;
+    /* margin-bottom: 25px; */
+}
+
+.footer_rights p {
+    margin-top: 3.5px;
 }
