@@ -93,7 +93,7 @@
 }
 
 .hero {
-    background-image: url(https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true);
+    background-image: url(https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/hero-cruise.png?raw=true);
     background-repeat: no-repeat;
     height: 80vh;
     /* width: 100vw; */
@@ -209,7 +209,7 @@
 
 /* For Banner Class... */
 .banner {
-    background-image: url(https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/caribbean-cruise.png?raw=true);
+    background-image: url(https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/caribbean-cruise.png?raw=true);
     background-repeat: no-repeat;
     /* width: 100vw; */
     height: 300px;
